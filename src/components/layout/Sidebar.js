@@ -112,7 +112,7 @@ export default function Sidebar({ isOpen, onClose }) {
             <div className="flex items-center">
               <div className="w-9 h-9 relative flex items-center justify-center text-white font-bold rounded-lg">
                 <Image
-                  src="/Nas-Logo.svg"
+                  src="/ide-xtra.svg"
                   alt="Company Logo"
                   fill
                   className="object-contain"

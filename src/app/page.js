@@ -62,7 +62,7 @@ export default function LoginPage() {
           className="absolute bottom-12 left-0 z-30"
         >
           <Image
-            src="/Bike.png" // make sure your bike image is inside /public folder
+            src="/bike.png" // make sure your bike image is inside /public folder
             alt="Rider Animation"
             width={160}
             height={100}
@@ -78,7 +78,7 @@ export default function LoginPage() {
           <div className="flex items-center mb-16">
             <div className="relative w-32 h-32 mr-3">
               <Image
-                src="/Nas-Logo.svg"
+                src="/ide-xtra.svg"
                 alt="Company Logo"
                 fill
                 className="object-contain"
