@@ -77,7 +77,7 @@ export default function LoginPage() {
         <div className="z-10">
           <div className="flex items-center mb-16">
             <div className="relative w-32 h-32 mr-3">
-              <Image
+              <img
                 src="/ride-xtra.svg"
                 alt="Company Logo"
                 width={80}
