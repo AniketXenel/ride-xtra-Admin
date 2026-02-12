@@ -5,7 +5,7 @@ const nextConfig = {
       // Local development
       {
         protocol: 'http',
-        hostname: 'localhost',
+        hostname: 'https://ride-xtra-admin-eta.vercel.app/',
         port: '8082',
         pathname: '/**',
       },
@@ -13,7 +13,7 @@ const nextConfig = {
       // Production (VM External IP)
       {
         protocol: 'https',
-        hostname: 'ridextra.ai',
+        hostname: 'https://ride-xtra-admin-eta.vercel.app/',
         port: '3030', // IMPORTANT if images come from backend
         pathname: '/**',
       },
