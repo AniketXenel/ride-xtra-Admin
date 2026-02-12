@@ -78,7 +78,7 @@ export default function LoginPage() {
           <div className="flex items-center mb-16">
             <div className="relative w-32 h-32 mr-3">
               <Image
-                src="/ide-xtra.svg"
+                src="/ride-xtra.svg"
                 alt="Company Logo"
                 fill
                 className="object-contain"

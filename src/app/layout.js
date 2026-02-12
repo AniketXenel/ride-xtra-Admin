@@ -6,9 +6,9 @@ export const metadata = {
   title: "RideXtra Admin",
   description: "Best app ever 🚀",
   icons: {
-    icon: "/ide-xtra.svg",       // your main logo
-    shortcut: "/ide-xtra.png",   // browser fallback
-    apple: "/ide-xtra.png",      // iOS homescreen
+    icon: "/ride-xtra.svg",       // your main logo
+    shortcut: "/ride-xtra.png",   // browser fallback
+    apple: "/ride-xtra.png",      // iOS homescreen
   },
 };
 
