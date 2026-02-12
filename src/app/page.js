@@ -80,7 +80,8 @@ export default function LoginPage() {
               <Image
                 src="/ride-xtra.svg"
                 alt="Company Logo"
-                fill
+                width={80}
+                height={80}
                 className="object-contain"
                 priority
               />
