@@ -40,7 +40,7 @@ export default function ProfilePage() {
         email: user?.email || 'Not provided',
         phone: user?.profile?.phone ? `+91 ${user.profile.phone}` : 'Not provided',
         type: user?.profile?.type || 'Not specified',
-        wallet: user?.profile?.Wallet ? `₹${user.profile.Wallet.toFixed(3)}` : '₹0.00',
+        wallet: user?.profile?.Wallet ? `$${user.profile.Wallet.toFixed(3)}` : '$0.00',
         isEmailVerified: user?.profile?.isemailVerified || false,
         isPhoneVerified: user?.profile?.isPhoneVerified || false,
         isKYCVerified: user?.profile?.isKYCVerified || false,

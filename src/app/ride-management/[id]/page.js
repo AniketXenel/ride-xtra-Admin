@@ -552,26 +552,26 @@ export default function UserProfilePage() {
                                             {/* Base Fare */}
                                             <div className="flex justify-between text-sm">
                                                 <span className="text-gray-500">Base Fare</span>
-                                                <span className="font-medium text-gray-900">₹{getSafeValue(trips?.fareDetails?.baseFare)}</span>
+                                                <span className="font-medium text-gray-900">${getSafeValue(trips?.fareDetails?.baseFare)}</span>
                                             </div>
 
                                             {/* Distance Fare */}
                                             <div className="flex justify-between text-sm">
                                                 <span className="text-gray-500">Distance Fare</span>
-                                                <span className="font-medium text-gray-900">₹{getSafeValue(trips?.fareDetails?.distanceFare)}</span>
+                                                <span className="font-medium text-gray-900">${getSafeValue(trips?.fareDetails?.distanceFare)}</span>
                                             </div>
 
                                             {/* Time Fare */}
                                             <div className="flex justify-between text-sm">
                                                 <span className="text-gray-500">Time Fare</span>
-                                                <span className="font-medium text-gray-900">₹{getSafeValue(trips?.fareDetails?.timeFare)}</span>
+                                                <span className="font-medium text-gray-900">${getSafeValue(trips?.fareDetails?.timeFare)}</span>
                                             </div>
 
                                             {/* Platform Fee */}
                                             <div className="flex justify-between text-sm">
                                                 <span className="text-gray-500">Platform Fee</span>
                                                 <span className="font-medium text-gray-900">
-                                                    ₹{getSafeValue(trips?.fareDetails?.platformFee)} ({getSafeValue(trips?.fareDetails?.platformFeePercentage)}%)
+                                                    ${getSafeValue(trips?.fareDetails?.platformFee)} ({getSafeValue(trips?.fareDetails?.platformFeePercentage)}%)
                                                 </span>
                                             </div>
 
@@ -579,7 +579,7 @@ export default function UserProfilePage() {
                                             {trips?.fareDetails?.surge > 0 && (
                                                 <div className="flex justify-between text-sm">
                                                     <span className="text-gray-500">Surge</span>
-                                                    <span className="font-medium text-gray-900">₹{getSafeValue(trips?.fareDetails?.surge)}</span>
+                                                    <span className="font-medium text-gray-900">${getSafeValue(trips?.fareDetails?.surge)}</span>
                                                 </div>
                                             )}
 
@@ -587,7 +587,7 @@ export default function UserProfilePage() {
                                             {trips?.fareDetails?.tollFees > 0 && (
                                                 <div className="flex justify-between text-sm">
                                                     <span className="text-gray-500">Toll Fees</span>
-                                                    <span className="font-medium text-gray-900">₹{getSafeValue(trips?.fareDetails?.tollFees)}</span>
+                                                    <span className="font-medium text-gray-900">${getSafeValue(trips?.fareDetails?.tollFees)}</span>
                                                 </div>
                                             )}
 
@@ -595,7 +595,7 @@ export default function UserProfilePage() {
                                             {trips?.fareDetails?.cancelFare > 0 && (
                                                 <div className="flex justify-between text-sm">
                                                     <span className="text-gray-500">Cancel Fee</span>
-                                                    <span className="font-medium text-gray-900">₹{getSafeValue(trips?.fareDetails?.cancelFare)}</span>
+                                                    <span className="font-medium text-gray-900">${getSafeValue(trips?.fareDetails?.cancelFare)}</span>
                                                 </div>
                                             )}
 
@@ -605,13 +605,13 @@ export default function UserProfilePage() {
                                             {/* Total Fare */}
                                             <div className="flex justify-between text-base font-semibold">
                                                 <span>Total Fare</span>
-                                                <span>₹{getSafeValue(trips?.fareDetails?.totalFare)}</span>
+                                                <span>${getSafeValue(trips?.fareDetails?.totalFare)}</span>
                                             </div>
 
                                             {/* Driver Earnings */}
                                             <div className="flex justify-between text-sm text-green-700">
                                                 <span>Driver Gets</span>
-                                                <span className="font-semibold">₹{getSafeValue(trips?.fareDetails?.driverGets)}</span>
+                                                <span className="font-semibold">${getSafeValue(trips?.fareDetails?.driverGets)}</span>
                                             </div>
                                         </div>
                                     </div>
@@ -661,7 +661,7 @@ export default function UserProfilePage() {
         <FiDollarSign className="mr-1" /> Amount
       </span>
       <span className="font-semibold text-gray-900">
-        ₹{trips?.payment?.amount || 0}
+        ${trips?.payment?.amount || 0}
       </span>
     </div>
 
@@ -880,7 +880,7 @@ export default function UserProfilePage() {
                                                             )}
                                                         </td>
                                                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                                                            ₹{trip.fareDetails?.totalFare || 0}
+                                                            ${trip.fareDetails?.totalFare || 0}
                                                         </td>
                                                         <td className="px-6 py-4 whitespace-nowrap">
                                                             <div className="flex items-center">

@@ -102,7 +102,7 @@ export default function RiderAdminDashboard() {
   }, [orderLimit]);
 
   const isToday = timeFilter === 'today';
-  const fmtINR = (n) => `₹${Number(n || 0).toLocaleString('en-IN')}`;
+  const fmtINR = (n) => `$${Number(n || 0).toLocaleString('en-IN')}`;
 
   // Build cards from API data
   const stats = isToday
